@@ -1,0 +1,188 @@
+@font-face {
+  font-family: geograph-regular;
+  src: url(fonts/test-geograph-regular.woff2);
+}
+@font-face {
+  font-family: geograph-medium;
+  src: url(fonts/test-geograph-medium.woff2);
+}
+@font-face {
+  font-family: geograph-bold;
+  src: url(fonts/test-geograph-bold.woff2);
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.form-content {
+  background-color: white;
+  padding: 32px 86px 48px 82px;
+  margin-bottom: 48px;
+}
+@media only screen and (max-width: 600px) {
+  .form-content {
+    padding: 24px;
+  }
+}
+
+.background {
+  background: url(images/bg-desktop.png) no-repeat bottom right, linear-gradient(to right, rgb(243, 254, 251), rgb(243, 254, 251));
+}
+
+section {
+  padding: 32px 0 48px;
+}
+
+h1 {
+  font-family: geograph-regular;
+  margin-bottom: 32px !important;
+  font-size: 28px;
+}
+
+legend {
+  font-family: geograph-medium;
+  margin-top: 48px;
+  margin-bottom: 0 !important;
+  font-size: 20px;
+}
+
+fieldset:first-child legend {
+  margin-top: 0;
+}
+
+fieldset:last-child legend {
+  margin-bottom: 24px !important;
+}
+
+section p {
+  margin: 24px 0 8px !important;
+  font-family: geograph-medium;
+  font-size: 16px;
+}
+
+.input-text label,
+.input-phone label {
+  margin-top: 24px;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+input[type=text],
+input[type=email],
+select {
+  padding: 16px;
+  border: 1px solid #bfbfbf;
+  border-radius: 5px;
+  margin-bottom: 24px;
+}
+
+input[type=text]:last-child,
+input[type=email]:last-child,
+select:last-child {
+  margin-bottom: 0;
+}
+
+input[type=text]:active,
+input[type=email]:active,
+select:active {
+  border: 2px solid #bfbfbf;
+}
+
+/* input text */
+.input-text {
+  display: flex;
+  flex-direction: column;
+}
+
+/* toggle button */
+.toggle-button {
+  color: #545354 !important;
+  border: solid 2px #bfbfbf !important;
+  border-radius: 0px !important;
+  padding: 24px 0 !important;
+  width: 140px;
+  font-size: 18px !important;
+  margin: 0 16px 0 0;
+}
+
+.toggle-button:hover {
+  border: solid 2px #939393 !important;
+}
+
+.toggle-button:checked {
+  color: #0e2b4c !important;
+  border: solid 4px #0e2b4c !important;
+  font-size: 18px !important;
+  font-family: geograph-bold !important;
+}
+
+/* radio group */
+input[type=radio] {
+  accent-color: #0e2b4c;
+  min-width: 32px;
+  height: 32px;
+  margin: 16px 16px 16px 24px;
+  flex-basis: 32px !important;
+}
+@media only screen and (max-width: 600px) {
+  input[type=radio] {
+    padding: 16px;
+  }
+}
+
+.radio-list-option {
+  border-bottom: solid 1px #eaeaea;
+  display: flex;
+  align-items: center;
+  font-family: geograph-regular;
+}
+
+.radio-list-option:hover {
+  background-color: #edfafe;
+}
+
+/* save button */
+.save-button {
+  background-color: #17487f;
+  color: white;
+  border-radius: 12px;
+  border: none;
+  padding: 24px 0;
+  font-family: geograph-medium;
+}
+
+/* footer */
+.logo-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+@media only screen and (max-width: 600px) {
+  .logo-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.logo {
+  height: 60px;
+  width: 168px;
+  margin: 24px 0 32px;
+}
+@media only screen and (max-width: 600px) {
+  .logo {
+    margin: 24px 0 0;
+  }
+}
+
+footer p {
+  text-align: center;
+  color: #6a696a;
+  font-size: 12px;
+}
+@media only screen and (max-width: 600px) {
+  footer p {
+    margin-top: 8px;
+  }
+}/*# sourceMappingURL=style.css.map */
